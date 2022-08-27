@@ -6,7 +6,7 @@ const RatingSelect = ({ select }) => {
   const { feedbackEdit } = useContext(FeedbackContext);
 
   const handleChange = (e) => {
-    setSelected(e.currentTarget.value);
+    setSelected(+e.currentTarget.value);
     select(e.currentTarget.value);
   };
 
